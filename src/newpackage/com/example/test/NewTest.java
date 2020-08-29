@@ -32,7 +32,7 @@ public class NewTest {
 		js = (JavascriptExecutor) driver;
 //	  	System.setProperty("webdriver.gecko.driver","C:\\Users\\Thong\\Downloads\\geckodriver.exe");
 //		driver = new FirefoxDriver();
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Thong\\Downloads\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Thong\\eclipse-workspace\\HW\\resource\\chromedriver.exe");
 		driver = new ChromeDriver();
 
 	}
@@ -40,7 +40,7 @@ public class NewTest {
 	@Test
 	public void ReadAndTest() {
 		TestCase1 ts1 = new TestCase1();
-		String data = "C:\\Users\\Thong\\Downloads\\TestData.xlsx";
+		String data = "C:\\Users\\Thong\\eclipse-workspace\\HW\\resource\\TestData.xlsx";
 		ts1.execute(url, "Prototype", driver, data);
 	}
 
